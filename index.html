@@ -3,13 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-    <title>Document</title>
+    <title>Tennis Meetup</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>Tennis Connect</header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <h1>Tennis Connect</h1>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Buscar</a>
+                <a href="#">About</a>
+                <a href="#">Contacto</a>
+            </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <h2>Encuentra grupos de tenis cerca de ti</h2>
+                <p>Únete a jugadores apasionados como tú para jugar al tenis y mejorar tu juego.</p>
+                <a href="#" class="btn">Empieza Ahora</a>
+            </div>
+        </section>
+        <section class="about">
+            <h2>Inicio</h2>
+            <p>Empieza a jugar ahora</p>
+            <div>Registrate</div>
+            <div>Busca</div>
+            <div>Juga</div>
+        </section>
+        <section class="groups">
+            <h2>Grupos de Tenis</h2>
+            <div class="group">
+            <h3>Grupo 1</h3>
+            <p>Jugadores: 4</p>
+            <a href="#" class="btn">Unirme</a>
+        </div>
+        <div class="group">
+            <h3>Grupo 2</h3>
+            <p>Jugadores: 3</p>
+            <a href="#" class="btn">Unirme</a>
+        </div>
+        <div class="group">
+            <h3>Grupo 3</h3>
+            <p>Jugadores: 5</p>
+            <a href="#" class="btn">Unirme</a>
+        </div>
+        </section>
+        <section class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una comunidad de jugadores de tenis que se reúnen para jugar partidos amistosos y mejorar juntos. ¡Únete a nosotros!</p>
+        </section>
+        <section class="contact">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta o sugerencia? ¡Contáctanos!</p>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+    <p>&copy; 2024 Tennis Connect. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
