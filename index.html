@@ -1,75 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tennis Meetup</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TennisConnect</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Tennis Connect</h1>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Buscar</a>
-                <a href="#">About</a>
-                <a href="#">Contacto</a>
-            </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div>
-                <h2>Encuentra grupos de tenis cerca de ti</h2>
-                <p>Únete a jugadores apasionados como tú para jugar al tenis y mejorar tu juego.</p>
-                <a href="#" class="btn">Empieza Ahora</a>
+<header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Conéctate y Juega</a>
+        <a href="#">Buscar Grupos</a>
+        <a href="#">Perfil</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <div class="hero">
+        <video autoplay muted loop id="heroVideo">
+            <source src="./Rolling_Tennis_Balls.mp4" type="video/mp4">
+            Tu navegador no soporta el video HTML5.
+        </video>
+        <div class="hero-content">
+            <h1>TennisConnect</h1>
+            <p>Un lugar de encuentro</p>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="about">
+        <h2>Conéctate y Juega</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Inicia Sesión</h3>
+                <p>Desde Perfil inicia sesión o regístrate si no tienes cuenta y rellena tus datos.</p>
+                <img src="./acceso (1).png" alt="inicia">
             </div>
-        </section>
-        <section class="about">
-            <h2>Inicio</h2>
-            <p>Empieza a jugar ahora</p>
-            <div>Registrate</div>
-            <div>Busca</div>
-            <div>Juga</div>
-        </section>
-        <section class="groups">
-            <h2>Grupos de Tenis</h2>
-            <div class="group">
-            <h3>Grupo 1</h3>
-            <p>Jugadores: 4</p>
-            <a href="#" class="btn">Unirme</a>
+            <div class="feature">
+                <h3>Busca Grupo</h3>
+                <p>Ve a la sección "Buscar grupo", selecciona tu zona y haz clic en buscar.</p>
+                <img src="./search.png" alt="inicia">
+            </div>
+            <div class="feature">
+                <h3>Juega</h3>
+                <p>Coordina con tu grupo a través del chat de grupo para juntarse y jugar.</p>
+                <img src="./juega.png" alt="inicia">
+            </div>
         </div>
-        <div class="group">
-            <h3>Grupo 2</h3>
-            <p>Jugadores: 3</p>
-            <a href="#" class="btn">Unirme</a>
-        </div>
-        <div class="group">
-            <h3>Grupo 3</h3>
-            <p>Jugadores: 5</p>
-            <a href="#" class="btn">Unirme</a>
-        </div>
-        </section>
-        <section class="about">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos una comunidad de jugadores de tenis que se reúnen para jugar partidos amistosos y mejorar juntos. ¡Únete a nosotros!</p>
-        </section>
-        <section class="contact">
-            <h2>Contacto</h2>
-            <p>¿Tienes alguna pregunta o sugerencia? ¡Contáctanos!</p>
-            <form action="#" method="post">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-    <p>&copy; 2024 Tennis Connect. Todos los derechos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 TennisConnect. Todos los derechos reservados.</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
