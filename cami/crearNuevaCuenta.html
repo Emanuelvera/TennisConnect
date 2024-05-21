@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nueva Cuenta</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <form action="https://formspree.io/f/xyyrdjon" method="post">
+            <input required name="nombre" placeholder="Nombre" id="nombre" maxlength="10" type="text" >
+            <input required name="apellido" placeholder="Apellido" id="apellido" maxlength="10" type="text" >
+            <br>
+            <input required name="correo" placeholder="Correo electrónico" id="correo"  type="email">
+            <br>
+            <input required name="contraseña" placeholder="Contraseña" id="contraseña" type="password">
+            <br>
+            <label for="fecha">Fecha de nacimiento</label>
+            <input required type="date" name="fecha" id="fecha">
+            <br>
+            <p>Sexo</p>
+            <input type="radio" name="helado" value="1">Mujer
+            <input type="radio" name="helado" value="2">Hombre
+            <input type="radio" name="helado" value="3">Personalizado
+            <br>
+            <label for="textoGrande"></label>
+            <textarea name="textoGrande" id="textoGrande" cols="30" rows="10" placeholder="Detalle su experiencia en el Tenis"></textarea>
+            <br>
+            <input type="submit" value="Registrarte">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

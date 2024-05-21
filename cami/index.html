@@ -20,17 +20,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Monoton&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teachers:ital,wght@0,400..800;1,400..800&family=Titan+One&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">    
+    
     <script src="https://kit.fontawesome.com/15d35a69b7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-      <nav>
-        <a href="">Inicio</a>
+
+    <header id="inicio">
+      <nav class="navbar">
+        <a href="#inicio">Inicio</a>
         <a href="">Encontrar Partidos</a>
-        <a href="">Comunidad</a>
-        <a href="">Noticias y Actualizaciones</a>
-        <a href="">Mi Perfil</a>
-        <a href="">Contacto</a>
+        <a href="#comunidad">Comunidad</a>
+        <a href="#noticias">Noticias y Actualizaciones</a>
+        <a href="#Contacto">Contacto</a>
+        <a href="miPerfil.html" target="_blank">Mi Perfil</a>
       </nav>
       <div class="principal">
         <video autoplay muted loop id="video">
@@ -45,12 +58,51 @@
     </header>
 
     <main>
-      
-      
+      <section>
+        <div id="primera">
+          <div class="texto">
+            <b>BIENVENIDO A TENISCONNECT</b>
+            <hr>
+            <br>
+            <h1>Tu Comunidad Global de Amantes del Tenis</h1>
+            <p>En TenisConnect, creemos que el tenis es más que un deporte, es una pasión que une a personas de todo el mundo. Nuestra plataforma está diseñada para conectar a jugadores de todos los niveles y brindarte lo que necesitas para mejorar tu juego, encontrar compañeros y estar al tanto de las últimas novedades del tenis.</p>
+          </div>
+          <div class="imagen">
+            <img src="manos.jpeg" alt="Jugadores Conociendose">
+          </div>
+          
+        </div>
+      </section>
+      <section id="noticias" class="texto">
+        <b>NOTICIAS Y ACTUALIZACIONES</b>
+        <hr>
+      </section>
+      <section id="comunidad" class="texto">
+        <b>COMUNIDAD</b>
+        <hr>
+      </section>
     </main>
 
     <footer>
-
+      <div id="info">
+        <h1>TenisConnect</h1>
+        <div id="Contacto">
+          <h2>Contacto</h2>
+          <h3>Dirección: 123 Main Street</h3>
+          <h3>Celular: (555) 555-5555</h3>
+          <h3>E-mail: example@example.com</h3>
+        </div>
+        <div class="seguinos">
+          <h2>Seguinos</h2>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      
+      </div>
+      <br>
+      <p>&copy; 2024 TennisConnect. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
