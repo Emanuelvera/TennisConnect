@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="miPerfil.css">
 </head>
 <body>
-    <!-- <div id="fondo"> <img src="cancha.jpg" alt="Cancha de tenis"></div> -->
     <header></header>
     <main>
-        <form action="https://formspree.io/f/xyyrdjon" method="post">
-            
-            <input required name="correo" placeholder="Correo electrónico" id="correo"  type="email">
-            <br>
-            <input required name="contraseña" placeholder="Contraseña" id="contraseña" type="password">
-            <br>
-            <input type="submit" value="Iniciar sesión">
-            <br>
-            <a href="">¿Olvidaste tu contraseña?</a>
-            <br>
-            <input type="button" value="Crear cuenta nueva" onclick="crearNuevaCuenta()">
-        </form>
+        <div class="formulario">
+            <h1>Inicio de sesión</h1>
+            <form action="https://formspree.io/f/xyyrdjon" method="post">
+                <div class="datos">
+                    <input required name="correo" placeholder="Correo electrónico" id="correo" type="email">
+                    <input required name="contraseña" placeholder="Contraseña" id="contraseña" type="password">
+                </div>
+                <div class="botones">
+                    <input type="submit" value="Iniciar sesión">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <input type="button" value="Crear cuenta nueva" onclick="crearNuevaCuenta()">
+                </div>
+            </form>
+        </div>
     </main>
     <footer></footer>
     <script>
