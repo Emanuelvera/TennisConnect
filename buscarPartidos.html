@@ -5,83 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TenisConnect</title>
     <link rel="icon" href="icono2.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
+    <link rel="stylesheet" href="buscarPartidos.css">
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Exo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lekton:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Exo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lekton:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bad+Script&family=Hubballi&family=Lalezar&family=Luckiest+Guy&family=Monoton&family=Outfit:wght@100..900&family=Paytone+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Salsa&family=Teachers:ital,wght@0,400..800;1,400..800&family=Titan+One&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Monoton&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teachers:ital,wght@0,400..800;1,400..800&family=Titan+One&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">    
-    
     <script src="https://kit.fontawesome.com/15d35a69b7.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <header id="inicio">
-      <nav class="navbar">
-        <a href="#inicio">Inicio</a>
-        <a href="buscarPartidos.html" target="_parent">Encontrar Partidos</a>
-        <a href="#comunidad">Comunidad</a>
-        <a href="#noticias">Noticias y Actualizaciones</a>
-        <a href="#Contacto">Contacto</a>
-        <a href="miPerfil.html" target="_blank">Mi Perfil</a>
-      </nav>
-      <div class="principal">
-        <video autoplay muted loop id="video">
-          <source src="videoInicio.mp4" type="video/mp4">
-        </video>
-        <div id="contenidoppal">
-          <h1><b>Tenis Connect</b></h1>
-          <p><b>UN LUGAR DE ENCUENTRO</b></p>
-        </div>
-        <i class="fa-solid fa-chevron-down" id="flecha"></i>
-      </div>
-    </header>
-
-    <main>
-      <section>
-        <div id="primera">
-          <div class="texto">
-            <b>BIENVENIDO A TENISCONNECT</b>
-            <hr>
-            <br>
-            <h1>Tu Comunidad Global de Amantes del Tenis</h1>
-            <p>En TenisConnect, creemos que el tenis es más que un deporte, es una pasión que une a personas de todo el mundo. Nuestra plataforma está diseñada para conectar a jugadores de todos los niveles y brindarte lo que necesitas para mejorar tu juego, encontrar compañeros y estar al tanto de las últimas novedades del tenis.</p>
-          </div>
-          <div class="imagen">
-            <img src="manos.jpeg" alt="Jugadores Conociendose">
-          </div>
+  <main id="inicio">
+    <nav class="navbar">
+    </nav>
+    <div class="principal">
+      <img src="cancha.jpg" id="video">
+      <div id="contenidoppal">
+        <h1><b>Encuentra tu equipo</b></h1>
+        <!-- Aquí empieza el formulario -->
+        <form id="searchForm">
+          <label for="location">Ubicación:</label>
+          <input type="text" id="location" name="location" required>
           
-        </div>
-      </section>
-      <section id="noticias" class="texto">
-        <b>NOTICIAS Y ACTUALIZACIONES</b>
-        <hr>
-      </section>
-      <section id="comunidad" class="texto">
-        <b>COMUNIDAD</b>
-        <hr>
-      </section>
-    </main>
+          <label for="skillLevel">Nivel de habilidad:</label>
+          <select id="skillLevel" name="skillLevel" required>
+            <option value="beginner">Principiante</option>
+            <option value="intermediate">Intermedio</option>
+            <option value="advanced">Avanzado</option>
+          </select>
+          
+          <label for="date">Fecha:</label>
+          <input type="date" id="date" name="date" required>
+          
+          <button type="submit" class="myButton">Buscar</button>
+        </form>
+        <!-- Aquí termina el formulario -->
+      </div>
+    </div>
+  </main>
+
+    <!-- Ventana emergente (modal) 
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Equipos disponibles</h2>
+        <ul id="teamList">
+          <p>Equipo 1</p>
+        </ul>
+        <ul id="teamList">
+          <p>Equipo 2</p>
+        </ul>
+        <ul id="teamList">
+          <p>Equipo 3</p>
+        </ul>
+      </div>
+    </div>-->
 
     <footer>
       <div id="info">
@@ -99,7 +91,6 @@
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
-      
       </div>
       <br>
       <p>&copy; 2024 TennisConnect. Todos los derechos reservados.</p>
