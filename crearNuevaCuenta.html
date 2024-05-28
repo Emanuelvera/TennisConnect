@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crearNuevaCuenta.css">
+    <title>Crear Nueva Cuenta</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="formulario">
+            <h1>Crear Nueva Cuenta</h1>
+            <form action="https://formspree.io/f/xyyrdjon" method="post">
+                <div class="datos">
+                    <input required name="nombre" placeholder="Nombre" id="nombre" maxlength="10" type="text" >
+                    <input required name="apellido" placeholder="Apellido" id="apellido" maxlength="10" type="text" >
+                    <br>
+                    
+                    <input required name="correo" placeholder="Correo electrónico" id="correo"  type="email">
+                    <br>
+                    <input required name="contraseña" placeholder="Contraseña" id="contraseña" type="password">
+                    <br>
+                    
+                </div>
+                <div class="otros">
+                <label for="fecha">Fecha de nacimiento</label>
+                <input required type="date" name="fecha" id="fecha">
+                <br>
+                <label for="radio">Sexo</label>
+                <input type="radio" name="helado" value="1">Mujer
+                <input type="radio" name="helado" value="2">Hombre
+                <input type="radio" name="helado" value="3">Personalizado
+                <br>
+                <label for="textoGrande"></label>
+                <textarea name="textoGrande" id="textoGrande" cols="30" rows="10" placeholder="Detalle su experiencia en el Tenis"></textarea>
+                <br>
+                </div>
+                <input type="submit" value="Registrarte">
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
+

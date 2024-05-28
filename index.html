@@ -1,56 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TennisConnect</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TenisConnect</title>
+    <link rel="icon" href="icono2.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Exo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lekton:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bad+Script&family=Hubballi&family=Lalezar&family=Luckiest+Guy&family=Monoton&family=Outfit:wght@100..900&family=Paytone+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Salsa&family=Teachers:ital,wght@0,400..800;1,400..800&family=Titan+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Monoton&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teachers:ital,wght@0,400..800;1,400..800&family=Titan+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">    
+    
+    <script src="https://kit.fontawesome.com/15d35a69b7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Conéctate y Juega</a>
-        <a href="#">Buscar Grupos</a>
-        <a href="#">Perfil</a>
-        <a href="#">Contacto</a>
-    </nav>
-    <div class="hero">
-        <video autoplay muted loop id="heroVideo">
-            <source src="./Rolling_Tennis_Balls.mp4" type="video/mp4">
-            Tu navegador no soporta el video HTML5.
+
+    <header id="inicio">
+      <nav class="navbar">
+        <a href="#inicio">Inicio</a>
+        <a href="">Encontrar Partidos</a>
+        <a href="#comunidad">Comunidad</a>
+        <a href="#noticias">Noticias y Actualizaciones</a>
+        <a href="#Contacto">Contacto</a>
+        <a href="miPerfil.html" target="_blank">Mi Perfil</a>
+      </nav>
+      <div class="principal">
+        <video autoplay muted loop id="video">
+          <source src="videoInicio.mp4" type="video/mp4">
         </video>
-        <div class="hero-content">
-            <h1>TennisConnect</h1>
-            <p>Un lugar de encuentro</p>
+        <div id="contenidoppal">
+          <h1><b>Tenis Connect</b></h1>
+          <p><b>UN LUGAR DE ENCUENTRO</b></p>
         </div>
-    </div>
-</header>
-<main>
-    <section class="about">
-        <h2>Conéctate y Juega</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>Inicia Sesión</h3>
-                <p>Desde Perfil inicia sesión o regístrate si no tienes cuenta y rellena tus datos.</p>
-                <img src="./acceso (1).png" alt="inicia">
-            </div>
-            <div class="feature">
-                <h3>Busca Grupo</h3>
-                <p>Ve a la sección "Buscar grupo", selecciona tu zona y haz clic en buscar.</p>
-                <img src="./search.png" alt="inicia">
-            </div>
-            <div class="feature">
-                <h3>Juega</h3>
-                <p>Coordina con tu grupo a través del chat de grupo para juntarse y jugar.</p>
-                <img src="./juega.png" alt="inicia">
-            </div>
+        <i class="fa-solid fa-chevron-down" id="flecha"></i>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div id="primera">
+          <div class="texto">
+            <b>BIENVENIDO A TENISCONNECT</b>
+            <hr>
+            <br>
+            <h1>Tu Comunidad Global de Amantes del Tenis</h1>
+            <p>En TenisConnect, creemos que el tenis es más que un deporte, es una pasión que une a personas de todo el mundo. Nuestra plataforma está diseñada para conectar a jugadores de todos los niveles y brindarte lo que necesitas para mejorar tu juego, encontrar compañeros y estar al tanto de las últimas novedades del tenis.</p>
+          </div>
+          <div class="imagen">
+            <img src="manos.jpeg" alt="Jugadores Conociendose">
+          </div>
+          
         </div>
-    </section>
-</main>
-<footer>
-    <p>&copy; 2024 TennisConnect. Todos los derechos reservados.</p>
-</footer>
-<script src="script.js"></script>
+      </section>
+      <section id="noticias" class="texto">
+        <b>NOTICIAS Y ACTUALIZACIONES</b>
+        <hr>
+      </section>
+      <section id="comunidad" class="texto">
+        <b>COMUNIDAD</b>
+        <hr>
+      </section>
+    </main>
+
+    <footer>
+      <div id="info">
+        <h1>TenisConnect</h1>
+        <div id="Contacto">
+          <h2>Contacto</h2>
+          <h3>Dirección: 123 Main Street</h3>
+          <h3>Celular: (555) 555-5555</h3>
+          <h3>E-mail: example@example.com</h3>
+        </div>
+        <div class="seguinos">
+          <h2>Seguinos</h2>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      
+      </div>
+      <br>
+      <p>&copy; 2024 TennisConnect. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

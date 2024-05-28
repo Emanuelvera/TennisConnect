@@ -1,0 +1,77 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background:  linear-gradient(150deg,#FFC374,#C6EBC5,#87A922);;
+    margin: 0;
+    padding: 0;
+}
+
+.formulario {
+    background-color: white;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.formulario h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.datos, .otros {
+    display: flex;
+    flex-direction: column;
+}
+
+.datos input, .otros input, .otros textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.datos input:focus, .otros input:focus, .otros textarea:focus {
+    border:2px solid #FF9800;
+    outline: none;
+}
+
+
+.otros label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.otros input[type="radio"] {
+    margin: 0 5px 0 0;
+    width: auto;
+}
+
+form br {
+    display: none; /* Elimina el espacio que crean los <br> en el formulario */
+}
+
+input[type="submit"] {
+    background-color:#FF9800;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color:#FFC374;
+}
+
+.otros textarea{
+    height: 100px;
+}
