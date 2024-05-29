@@ -164,6 +164,30 @@ section{
     height: 100%;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    position: relative;
+}
+
+.grid-item {
+    padding: 1rem;
+    text-align: center;
+    background-color:rgba(73, 73, 73, 0.582);
+    border: solid rgb(119, 119, 119);
+    border-style:outset;
+}
+
+
+.uniform-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
 
 
 
