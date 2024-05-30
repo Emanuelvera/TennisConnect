@@ -33,7 +33,7 @@ header {
 
 .menu-toggle {
     display: none;
-    font-size: 2rem;
+    font-size:  2rem;
     background: none;
     border: none;
     color: whitesmoke;
@@ -53,6 +53,10 @@ header {
     color: whitesmoke;
     text-decoration: none;
     transition: border-bottom 0.3s ease;
+}
+
+#nav-links.active {
+    display: block;
 }
 
 /* PSEUDOCLASES PARA HIPERVÍNCULOS
@@ -93,9 +97,7 @@ header {
     #nav-links.active {
         display: flex;
     }
-}
 
-@media screen and (max-width: 720px) {
     .navbar {
         flex-direction: column; /* Cambio de horizontal a vertical en ambas clases */
     }

@@ -24,6 +24,15 @@ window.addEventListener("scroll", function() {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 }, false);
 
+//Toggle MENU
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', function() {
+      navLinks.classList.toggle('active');
+  });
+});
 
 
 // script.js
@@ -48,14 +57,8 @@ window.onclick = function(event) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.getElementById('nav-links');
 
-  menuToggle.addEventListener('click', function() {
-      navLinks.classList.toggle('active');
-  });
-});
+
 
 
 
