@@ -1,52 +1,100 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color:#333;
+    background-color: #333;
     overflow-x: hidden; /* Esto previene el scroll horizontal */
     color: whitesmoke;
-
 }
-header{
+
+header {
     position: relative;
     width: 100vw;
 }
-.navbar{
-    height: 60px;
-    display:flex;
-    flex-wrap: wrap;
+
+.navbar {
+    display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
     position: fixed; /* Ahora el nav será fijo */
     top: 0; /* Lo fija en la parte superior de la ventana */
     left: 0;
     width: 100%; /* Ocupa todo el ancho */
     z-index: 1000; /* Asegura que esté encima de otros elementos */
-    background-color:rgb(0,0,0,0.8);
 }
-nav a{
-    margin:1vw;
-    background-color:transparent;
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#nav-links a {
+    margin: 1vw;
+    background-color: transparent;
     color: whitesmoke;
     text-decoration: none;
-    transition: border-bottom 0.3s ease; 
+    transition: border-bottom 0.3s ease;
 }
+
 /* PSEUDOCLASES PARA HIPERVÍNCULOS
 • :link se refiere a un enlace que todavía no ha sido visitado.
 • :hover se refiere a un elemento sobre el que se coloca el puntero del mouse.
 • :visited se refiere a un enlace que ya ha sido visitado.
 • :active se refiere a cualquier elemento que ha sido activado por el usuario.
 */
-nav a:hover,
-nav a:active {
+
+#nav-links a:hover,
+#nav-links a:active {
     color: #C5EBAA;
     border-bottom: 2px solid #C5EBAA;
 }
+
+/* Medias queries para dispositivos móviles */
+@media screen and (max-width: 720px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px; /* Altura de la navbar */
+        left: 0;
+        z-index: 999;
+    }
+    
+    #nav-links a {
+        margin: 1rem 0;
+        text-align: center;
+    }
+    
+    #nav-links.active {
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 720px) {
     .navbar {
         flex-direction: column; /* Cambio de horizontal a vertical en ambas clases */
@@ -79,8 +127,8 @@ nav a:active {
     font-size: 22px;
     
     font-family: "Monoton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    /*font-weight: 400;   
+    font-style: normal;*/
     
       
 
@@ -93,7 +141,6 @@ nav a:active {
     
 }
 #flecha{
-    color: whitesmoke;
     color: rgba(255, 255, 255, 0.5);
     position: absolute;
     top: 91%;
@@ -108,10 +155,10 @@ nav a:active {
 }
 @keyframes rebote {
     0% {
-      transform: translate(-50%, -50%) scale(1); /* Escala inicial */
+        transform: translate(-50%, -50%) scale(1); /* Escala inicial */
     }
     100% {
-      transform: translate(-50%, -50%) scale(1.2); /* Escala final */
+        transform: translate(-50%, -50%) scale(1.2); /* Escala final */
     }
   }
 
@@ -124,26 +171,26 @@ section{
 #primera{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    position:relative;
+    /*position:relative;
     height: 80vh;
-    width: 100%;
+    width: 100%;*/ /*se saca para probar responsive*/
     color:rgba(255, 255, 255, 0.5);
     gap:30px;
 }
-@media screen and (max-width: 420px){
-	#primera {
-		grid-template-areas: "texto texto"
-						    "imagen imagen";
-	}
-}
+
+@media screen and (max-width: 720px) {
+    #primera {
+        grid-template-columns: 1fr;
+    }
+  }
 .texto b{
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     letter-spacing: 3px; /* Ajusta el espaciado entre letras */
-   
 }
+
 .texto hr{
     border: 1.5px solid;
     width: 40px;
@@ -168,7 +215,7 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    position: relative;
+    /*position: relative;*/ /*se saca para probar responsive*/
 }
 
 .grid-item {
@@ -208,8 +255,8 @@ footer{
     gap: 10vw;
     margin-top: 5vh;
     font-family: "Abel", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    /*font-weight: 400;
+    font-style: normal;*/ /*se saca para probar responsive*/
 }
 #info h1{
     font-family: "Monoton", sans-serif;
