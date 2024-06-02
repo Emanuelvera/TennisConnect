@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TenisConnect</title>
-    <link rel="icon" href="../TennisConnect/utils/icono2.png">
+    <link rel="icon" href="utils/icono2.png">
     <link rel="stylesheet" href="buscarPartidos.css">
-    <script src="script.js" defer></script>
+    <script src="buscarPartidos.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Exo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lekton:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
@@ -31,15 +31,25 @@
 
   <main id="inicio">
     <nav class="navbar">
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        &#9776;
+    </button>
+    <div id="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="buscarPartidos.html" target="_parent">Encontrar Partidos</a>
+        <a href="index.html#comunidad">Comunidad</a>
+        <a href="index.html#noticias">Noticias y Actualizaciones</a>
+        <a href="#Contacto">Contacto</a>
+        <a href="miPerfil.html" target="_blank">Mi Perfil</a>
     </nav>
     <div class="principal">
-      <img src="../TennisConnect/utils/cancha.jpg" id="video">
+      <img src="utils/cancha.jpg" id="video">
       <div id="contenidoppal">
-        <h1><b>Encuentra tu equipo</b></h1>
+        <h1><b>Encuentra Partidos</b></h1>
         <!-- Aquí empieza el formulario -->
-        <form id="searchForm">
+        <form id="searchForm" action="https://formspree.io/f/xyyrdjon" method="post">
           <label for="location">Ubicación:</label>
-          <input type="text" id="location" name="location" required>
+          <input type="text" id="location" name="location" required placeholder="Ciudad, Provincia, País">
           
           <label for="skillLevel">Nivel de habilidad:</label>
           <select id="skillLevel" name="skillLevel" required>
