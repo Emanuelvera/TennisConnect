@@ -13,18 +13,17 @@ body{
     color: whitesmoke;
 }
 
-.navbar{
-    height: 60px;
-    display:flex;
-    flex-wrap: wrap;
+.navbar {
+    display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
     position: fixed; /* Ahora el nav será fijo */
     top: 0; /* Lo fija en la parte superior de la ventana */
     left: 0;
     width: 100%; /* Ocupa todo el ancho */
     z-index: 1000; /* Asegura que esté encima de otros elementos */
-    background-color:rgb(0,0,0,0.8);
 }
 
 .menu-toggle {
@@ -67,11 +66,43 @@ body{
     color: #C5EBAA;
     border-bottom: 2px solid #C5EBAA;
 }
+
+/* Medias queries para dispositivos móviles */
+@media screen and (max-width: 720px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px; /* Altura de la navbar */
+        left: 0;
+        z-index: 999;
+    }
+    
+    #nav-links a {
+        margin: 1rem 0;
+        text-align: center;
+    }
+    
+    #nav-links.active {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column; /* Cambio de horizontal a vertical en ambas clases */
+    }
+}
 .principal{
     text-align: center;
     position:relative;
     height: 100vh;
     width: 100%; 
+    overflow: hidden;
 }
 
 #video{
@@ -83,25 +114,28 @@ body{
     object-fit:cover; /*es como responde el video al ancho y altura de su cuadro*/
 }
 
-#contenidoppal{
-    position:absolute;
+#contenidoppal {
+    position: absolute;
     top: 50%;
-    left: 50%; 
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
     color: whitesmoke;
     font-size: 22px;
-    
     font-family: "Monoton", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin-top: 5vh;
-    height: 80vh;
-    background-color: rgb(0,0,0,0.6);;
+    width:auto;
+    min-height: 40vh;
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 5%;
     padding: 2vh 3vw;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
 }
+
 
 #contenidoppal h1{
     /* font-family: "Luckiest Guy", cursive;
@@ -192,7 +226,7 @@ form input, form select, form button {
 
 /* ACA ARRANCA FOOTER */
 footer{
-    height: 40vh;
+    height: 20%;
     background-color: #DEAC80;
     color:black;
     display:grid;
