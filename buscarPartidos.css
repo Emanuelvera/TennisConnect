@@ -27,6 +27,46 @@ body{
     background-color:rgb(0,0,0,0.8);
 }
 
+.menu-toggle {
+    display: none;
+    font-size:  2rem;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#nav-links a {
+    margin: 1vw;
+    background-color: transparent;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: border-bottom 0.3s ease;
+}
+
+#nav-links.active {
+    display: block;
+}
+
+/* PSEUDOCLASES PARA HIPERVÍNCULOS
+• :link se refiere a un enlace que todavía no ha sido visitado.
+• :hover se refiere a un elemento sobre el que se coloca el puntero del mouse.
+• :visited se refiere a un enlace que ya ha sido visitado.
+• :active se refiere a cualquier elemento que ha sido activado por el usuario.
+*/
+
+#nav-links a:hover,
+#nav-links a:active {
+    color: #C5EBAA;
+    border-bottom: 2px solid #C5EBAA;
+}
 .principal{
     text-align: center;
     position:relative;
@@ -55,13 +95,19 @@ body{
     font-family: "Monoton", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-top: 5vh;
+    height: 80vh;
+    background-color: rgb(0,0,0,0.6);;
+    border-radius: 5%;
+    padding: 2vh 3vw;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #contenidoppal h1{
     /* font-family: "Luckiest Guy", cursive;
     font-weight: 400;
     font-style: normal; */
-    font-size: 4rem;  
+    font-size: 3rem;  
 }
 
 @keyframes rebote {
@@ -97,7 +143,9 @@ body{
 form {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 2vh;
+    
+    
 }
 
 form label {
@@ -105,6 +153,7 @@ form label {
     margin-bottom: 5px;
     color: #fcf8f8;
     font-weight: bold;
+    text-align: left;
 }
 
 form input, form select, form button {
